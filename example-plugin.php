@@ -56,5 +56,5 @@ function _get_plugin_url() {
 	return $plugin_url;
 }
 
-// Enqueue JS and CSS
-include __DIR__ . '/lib/enqueue-scripts.php';
+// Enqueue JS and CSS.
+require __DIR__ . '/lib/enqueue-scripts.php';

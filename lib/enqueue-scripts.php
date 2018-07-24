@@ -1,4 +1,9 @@
 <?php
+/**
+ * Enqueuing for this plugin's js and css scripts.
+ *
+ * @package     Example-Plugin
+ **/
 
 namespace DannyCrews\Example_Plugin;
 
@@ -7,11 +12,11 @@ add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\enqueue_block_edito
  * Enqueue block editor only JavaScript and CSS.
  */
 function enqueue_block_editor_assets() {
-	// Make paths variables so we don't write em twice ;)
+	// Make paths variables so we don't write em twice ;).
 	$block_path = '/assets/js/blocks.editor.js';
 	$style_path = '/assets/css/blocks.editor.css';
 
-	// Enqueue the bundled block JS file
+	// Enqueue the bundled block JS file.
 	wp_enqueue_script(
 		'exampleplugin-blocks-js',
 		_get_plugin_url() . $block_path,
@@ -19,7 +24,7 @@ function enqueue_block_editor_assets() {
 		filemtime( _get_plugin_directory() . $block_path )
 	);
 
-	// Enqueue optional editor only styles
+	// Enqueue optional editor only styles.
 	wp_enqueue_style(
 		'exampleplugin-blocks-editor-css',
 		_get_plugin_url() . $style_path,
@@ -47,8 +52,6 @@ add_action( 'enqueue_block_assets', __NAMESPACE__ . '\enqueue_frontend_assets' )
  * Enqueue frontend JavaScript and CSS assets.
  */
 function enqueue_frontend_assets() {
-
-	// If in the backend, bail out.
 	if ( is_admin() ) {
 		return;
 	}
