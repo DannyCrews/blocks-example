@@ -3,4 +3,4 @@ import './i18n.js';
 /**
  * Import example blocks
  */
-// import './01-static';
+import './call-to-action';
