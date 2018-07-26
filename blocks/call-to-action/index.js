@@ -19,7 +19,7 @@ export default registerBlockType(
     {
         title: __( 'Call to Action', 'exampleplugin' ),
         description: __( 'Demonstration of how to make a static call to action block.', 'exampleplugin' ),
-        category: 'common',
+        category: 'example-plugin',
         icon: {
           background: 'rgba(254, 243, 224, 0.52)',
           src: icon,
