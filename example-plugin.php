@@ -59,13 +59,13 @@ function _get_plugin_url() {
 // Enqueue JS and CSS.
 require __DIR__ . '/lib/enqueue-scripts.php';
 
-// Add custom block category
+// Add custom block category.
 add_filter( 'block_categories', function( $categories, $post ) {
 	return array_merge(
 		$categories,
 		array(
 			array(
-				'slug' => 'example-plugin',
+				'slug'  => 'example-plugin',
 				'title' => __( 'Example Plugin', 'exampleplugin' ),
 			),
 		)
