@@ -99,15 +99,15 @@ const blockAttributes = {
 };
 
 // Register the block
-registerBlockType( 'atomic-blocks/ab-container', {
-	title: __( 'AB Container' ),
+registerBlockType( 'exampleplugin/block-container', {
+	title: __( 'Block Container' ),
 	description: __( 'Add a container block to wrap several blocks in a parent container.' ),
 	icon: 'editor-table',
-	category: 'atomic-blocks',
+	category: 'example-plugin',
 	keywords: [
-		__( 'container' ),
-		__( 'section' ),
-		__( 'atomic' ),
+		__( 'container', 'exampleplugin' ),
+		__( 'section', 'exampleplugin' ),
+		__( 'nest blocks', 'exampleplugin' ),
 	],
 
 	attributes: blockAttributes,

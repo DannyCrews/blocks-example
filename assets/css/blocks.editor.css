@@ -1,26 +1,2 @@
-.wp-block-exampleplugin-cta .sorry.warning {
-  background: #C44D58;
-  color: white;
-  font-size: 1.2rem; }
-/**
- * Editor styles for the admin
- */
-.wp-block-exampleplugin-cta {
-  margin-bottom: 0; }
-
-.editor-block-list__layout [data-type="atomic-blocks/ab-cta"] {
-  margin-bottom: 1.2em; }
-
-.wp-block-exampleplugin-cta-button .blocks-button__inline-link .editor-url-input {
-  display: inline-block;
-  width: auto; }
-
-.wp-block-exampleplugin-cta-button .blocks-button__inline-link .components-button {
-  display: inline-block; }
-
-.wp-block-exampleplugin-cta-button .blocks-button__inline-link svg {
-  vertical-align: middle;
-  margin-right: 8px; }
-
-.wp-block-exampleplugin-cta h2.editor-rich-text__tinymce.mce-content-body {
-  line-height: 1.2; }
+.wp-block-exampleplugin-cta .sorry.warning{background:#C44D58;color:white;font-size:1.2rem}
+.wp-block-exampleplugin-cta{margin-bottom:0}.editor-block-list__layout [data-type="atomic-blocks/ab-cta"]{margin-bottom:1.2em}.wp-block-exampleplugin-cta-button .blocks-button__inline-link .editor-url-input{display:inline-block;width:auto}.wp-block-exampleplugin-cta-button .blocks-button__inline-link .components-button{display:inline-block}.wp-block-exampleplugin-cta-button .blocks-button__inline-link svg{vertical-align:middle;margin-right:8px}.wp-block-exampleplugin-cta h2.editor-rich-text__tinymce.mce-content-body{line-height:1.2}
