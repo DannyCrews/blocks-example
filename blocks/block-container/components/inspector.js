@@ -135,7 +135,7 @@ export default class Inspector extends Component {
 					render={ ( { open } ) => (
 						<div>
 							<IconButton
-								className="ab-container-inspector-media"
+								className="block-container-inspector-media"
 								label={ __( 'Edit image' ) }
 								icon="format-image"
 								onClick={ open }
@@ -145,7 +145,7 @@ export default class Inspector extends Component {
 
 							{ containerImgURL && !! containerImgURL.length && (
 								<IconButton
-									className="ab-container-inspector-media"
+									className="block-container-inspector-media"
 									label={ __( 'Remove Image' ) }
 									icon="dismiss"
 									onClick={ onRemoveImage }

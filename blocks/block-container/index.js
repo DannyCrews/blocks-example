@@ -1,5 +1,5 @@
 /**
- * BLOCK: Atomic Blocks Container
+ * BLOCK: Example Plugin Blocks Container
  */
 
 // Import block dependencies and components
@@ -8,8 +8,8 @@ import Inspector from './components/inspector';
 import Container from './components/container';
 
 // Import CSS
-import './styles/style.scss';
-import './styles/editor.scss';
+import './style.scss';
+import './editor.scss';
 
 // Components
 const { __ } = wp.i18n;
@@ -99,8 +99,10 @@ const blockAttributes = {
 };
 
 // Register the block
-registerBlockType( 'exampleplugin/block-container', {
-	title: __( 'Block Container' ),
+registerBlockType(
+'exampleplugin/block-container',
+{
+	title: __( 'Block Container', 'exampleplugin' ),
 	description: __( 'Add a container block to wrap several blocks in a parent container.' ),
 	icon: 'editor-table',
 	category: 'example-plugin',
@@ -175,12 +177,12 @@ registerBlockType( 'exampleplugin/block-container', {
 			/>,
 			// Show the container markup in the editor
 			<Container { ...props }>
-				<div class="ab-container-inside">
+				<div class="block-container-inside">
 					{ containerImgURL && !! containerImgURL.length && (
-						<div class="ab-container-image-wrap">
+						<div class="block-container-image-wrap">
 							<img
 								className={ classnames(
-									'ab-container-image',
+									'block-container-image',
 									dimRatioToClass( containerDimRatio ),
 									{
 										'has-background-dim': containerDimRatio !== 0,
@@ -193,7 +195,7 @@ registerBlockType( 'exampleplugin/block-container', {
 					) }
 
 					<div
-						class="ab-container-content"
+						class="block-container-content"
 						style={ {
 							maxWidth: `${containerMaxWidth}px`,
 						} }
@@ -228,12 +230,12 @@ registerBlockType( 'exampleplugin/block-container', {
 		// Save the block markup for the front end
 		return (
 			<Container { ...props }>
-				<div class="ab-container-inside">
+				<div class="block-container-inside">
 					{ containerImgURL && !! containerImgURL.length && (
-						<div class="ab-container-image-wrap">
+						<div class="block-container-image-wrap">
 							<img
 								className={ classnames(
-									'ab-container-image',
+									'block-container-image',
 									dimRatioToClass( containerDimRatio ),
 									{
 										'has-background-dim': containerDimRatio !== 0,
@@ -246,7 +248,7 @@ registerBlockType( 'exampleplugin/block-container', {
 					) }
 
 					<div
-						class="ab-container-content"
+						class="block-container-content"
 						style={ {
 							maxWidth: `${containerMaxWidth}px`,
 						} }

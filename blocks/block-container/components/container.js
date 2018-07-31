@@ -36,7 +36,7 @@ export default class Container extends Component {
 				className={ classnames(
 					this.props.className,
 					`align${containerWidth}`,
-					'ab-block-container',
+					'example-plugin-block-container',
 				) }
 			>{ this.props.children }</div>
 		);

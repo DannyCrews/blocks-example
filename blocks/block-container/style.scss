@@ -3,7 +3,7 @@
  * Loads on front end and back end
  */
 
- .ab-block-container {
+ .example-plugin-block-container {
 	margin: 0 0 1.2em 0;
 	position: relative;
 	background: #fff;
@@ -16,23 +16,23 @@
 		}
 	}
 
-	&.alignfull .ab-container-inside,
-	&.alignfull .ab-container-inside {
+	&.alignfull .block-container-inside,
+	&.alignfull .block-container-inside {
 		@media only screen and (min-width: 768px) {
 			max-width: 100%;
 			margin: 0 auto;
 		}
 	}
 
-	&.alignwide .ab-container-inside,
-	&.alignwide .ab-container-inside {
+	&.alignwide .block-container-inside,
+	&.alignwide .block-container-inside {
 		@media only screen and (min-width: 768px) {
 			max-width: 80%;
 			margin: 0 auto;
 		}
 	}
 
-	.ab-container-image-wrap {
+	.block-container-image-wrap {
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -41,19 +41,19 @@
 		z-index: 0;
 	}
 
-	.ab-container-image {
+	.block-container-image {
 		object-fit: cover;
 		height: 100%;
 		width: 100%;
 		transition: .3s ease;
 	}
 
-	.ab-container-content {
+	.block-container-content {
 		margin: 0 auto;
 		position: relative;
 	}
 
-	.ab-container-image:not(.has-background-dim) {
+	.block-container-image:not(.has-background-dim) {
 		opacity: 0;
 	}
 

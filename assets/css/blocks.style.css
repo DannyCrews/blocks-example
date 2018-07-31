@@ -1,2 +1,75 @@
-.entry-content .wp-block-exampleplugin-cta,.wp-block-exampleplugin-cta{background:rgba(254,243,224,0.52);border:5px #f7b733 solid;padding:1rem}.entry-content .wp-block-exampleplugin-cta h2,.wp-block-exampleplugin-cta h2{color:#222;font-size:2rem;margin:1rem 0}.entry-content .wp-block-exampleplugin-cta p,.wp-block-exampleplugin-cta p{font-size:1.4rem}
-.ab-block-container{margin:0 0 1.2em 0;position:relative;background:#fff;color:#293038;padding:0}.ab-block-container.alignfull .editor-block-list__block{max-width:100%}@media only screen and (min-width: 768px){.ab-block-container.alignfull .ab-container-inside,.ab-block-container.alignfull .ab-container-inside{max-width:100%;margin:0 auto}}@media only screen and (min-width: 768px){.ab-block-container.alignwide .ab-container-inside,.ab-block-container.alignwide .ab-container-inside{max-width:80%;margin:0 auto}}.ab-block-container .ab-container-image-wrap{position:absolute;top:0;right:0;left:0;height:100%;z-index:0}.ab-block-container .ab-container-image{-o-object-fit:cover;object-fit:cover;height:100%;width:100%;transition:.3s ease}.ab-block-container .ab-container-content{margin:0 auto;position:relative}.ab-block-container .ab-container-image:not(.has-background-dim){opacity:0}.ab-block-container .has-background-dim{opacity:.5}.ab-block-container .has-background-dim-10{opacity:.1}.ab-block-container .has-background-dim-20{opacity:.2}.ab-block-container .has-background-dim-30{opacity:.3}.ab-block-container .has-background-dim-40{opacity:.4}.ab-block-container .has-background-dim-50{opacity:.5}.ab-block-container .has-background-dim-60{opacity:.6}.ab-block-container .has-background-dim-70{opacity:.7}.ab-block-container .has-background-dim-80{opacity:.8}.ab-block-container .has-background-dim-90{opacity:.9}.ab-block-container .has-background-dim-100{opacity:1}
+.entry-content .wp-block-exampleplugin-cta,
+.wp-block-exampleplugin-cta {
+  background: rgba(254, 243, 224, 0.52);
+  border: 5px #f7b733 solid;
+  padding: 1rem; }
+  .entry-content .wp-block-exampleplugin-cta h2,
+  .wp-block-exampleplugin-cta h2 {
+    color: #222;
+    font-size: 2rem;
+    margin: 1rem 0; }
+  .entry-content .wp-block-exampleplugin-cta p,
+  .wp-block-exampleplugin-cta p {
+    font-size: 1.4rem; }
+/**
+ * CTA styles
+ * Loads on front end and back end
+ */
+.example-plugin-block-container {
+  margin: 0 0 1.2em 0;
+  position: relative;
+  background: #fff;
+  color: #293038;
+  padding: 0; }
+  .example-plugin-block-container.alignfull .editor-block-list__block {
+    max-width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .example-plugin-block-container.alignfull .block-container-inside,
+    .example-plugin-block-container.alignfull .block-container-inside {
+      max-width: 100%;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 768px) {
+    .example-plugin-block-container.alignwide .block-container-inside,
+    .example-plugin-block-container.alignwide .block-container-inside {
+      max-width: 80%;
+      margin: 0 auto; } }
+  .example-plugin-block-container .block-container-image-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    z-index: 0; }
+  .example-plugin-block-container .block-container-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: .3s ease; }
+  .example-plugin-block-container .block-container-content {
+    margin: 0 auto;
+    position: relative; }
+  .example-plugin-block-container .block-container-image:not(.has-background-dim) {
+    opacity: 0; }
+  .example-plugin-block-container .has-background-dim {
+    opacity: .5; }
+  .example-plugin-block-container .has-background-dim-10 {
+    opacity: .1; }
+  .example-plugin-block-container .has-background-dim-20 {
+    opacity: .2; }
+  .example-plugin-block-container .has-background-dim-30 {
+    opacity: .3; }
+  .example-plugin-block-container .has-background-dim-40 {
+    opacity: .4; }
+  .example-plugin-block-container .has-background-dim-50 {
+    opacity: .5; }
+  .example-plugin-block-container .has-background-dim-60 {
+    opacity: .6; }
+  .example-plugin-block-container .has-background-dim-70 {
+    opacity: .7; }
+  .example-plugin-block-container .has-background-dim-80 {
+    opacity: .8; }
+  .example-plugin-block-container .has-background-dim-90 {
+    opacity: .9; }
+  .example-plugin-block-container .has-background-dim-100 {
+    opacity: 1; }
